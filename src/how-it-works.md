@@ -48,4 +48,4 @@ If during the process, Alice and Bob decide not to proceed with the exchange, th
 4. **Alice releases the sats:**  
    When Alice presses the *release* button in her client, she sends a [NIP-59](https://github.com/nostr-protocol/nips/blob/master/59.md) message to Mostrod indicating that the sats should be released to Bob. Then, the LN node associated with that instance of Mostrod settles the payment of the [hold invoice](./hold-invoice.md) and pays the invoice provided by Bob. At the end of the process, Mostrod publishes an event 38383 for that order with the status `success` and sends a [NIP-59](https://github.com/nostr-protocol/nips/blob/master/59.md) message to Alice and Bob, requesting that they rate their counterparty, who send back their rating through a [NIP-59](https://github.com/nostr-protocol/nips/blob/master/59.md) message.
    
-For more details on the communication between Mostrod and its clients, you can read [here](https://mostro.network/messages).
+For more details on the communication between Mostrod and its clients, you can read [here](https://mostro.network/protocol/).

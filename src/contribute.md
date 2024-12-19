@@ -11,6 +11,6 @@ While we suggest some areas where you can collaborate, feel free to propose any 
 - **Improvement proposals:** If you have ideas to enhance Mostro, we invite you to share them. Many key features have arisen thanks to suggestions from the community. You can propose your ideas in the [support groups](./support-and-contacts.md), or open an issue in the [corresponding repository](https://github.com/MostroP2P). If you believe it will spark significant discussion, then start a discussion in that repository.
 - **Content creation:** If you have skills in content creation, you can make video tutorials or written guides to help users make the most of Mostro.
 - **Social media outreach:** Sharing information about Mostro on social media helps increase its visibility and attract more people interested in contributing or using it.
-- **Donations:** If you prefer to financially support the development and maintenance of Mostro, you can make a donation to `mostro@getalby.com`.  
+- **Donations:** If you prefer to financially support the development and maintenance of Mostro, you can make a donation to [https://geyser.fund/project/mostro](https://geyser.fund/project/mostro).  
 
 Thank you so much for your support!

@@ -6,3 +6,7 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Mostro-FAQ"
+
+[output.html]
+git-repository-url = "https://github.com/MostroP2P/docs-english"
+edit-url-template = "https://github.com/MostroP2P/docs-english/edit/main/{path}"

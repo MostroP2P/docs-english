@@ -8,4 +8,6 @@ There is no standard method for resolving disputes across all Mostro instances. 
 
 When the administrator decides which user is in the right, they will have Mostro release the sats to the appropriate user. Administrators do not charge any extra fee for resolving disputes.
 
+To understand how user privacy is handled in the event of a dispute, refer to [this section](./privacy.md).  
+
 It is important to note that disputes are not automatically opened in any case. The users involved must initiate them before the [hold invoice](./hold-invoice.md) paid by the seller expires, so that the administrator has enough time to request evidence from both parties and make an appropriate decision, as time continues to run from when the order is accepted and does not stop when a dispute is opened. The administrator must resolve it before the time expires, so users should not wait too long to initiate it. You can read more about time frames [here](./times.md).

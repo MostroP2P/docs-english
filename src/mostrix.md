@@ -4,4 +4,4 @@ MostriX is a Mostro client with a TUI (Terminal User Interface) that offers an e
 
 ![mostrix](./assets/images/mostrix.png)
 
-Mostrui is a FOSS project; you can visit its [GitHub repository](https://github.com/MostroP2P/mostrix) to learn more about its development, report bugs, or propose improvements. Contributions are welcome!
+MostriX is a FOSS project; you can visit its [GitHub repository](https://github.com/MostroP2P/mostrix) to learn more about its development, report bugs, or propose improvements. Contributions are welcome!

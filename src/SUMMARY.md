@@ -15,6 +15,7 @@
 	- [Reputation System](./reputation.md)
 	- [Dispute Management](./disputes.md)
 	- [Privacy in Mostro](./privacy.md)
+	- [Account Backup and Restoration](./backup-restore.md)
 	- [Support and Contact](./support-and-contacts.md)
 	- [How to Contribute](./contribute.md)
 				

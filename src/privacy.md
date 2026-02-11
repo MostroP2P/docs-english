@@ -1,7 +1,7 @@
 # Privacy in Mostro
 
 ## User Communication Privacy with Mostro
-Communication between Mostrod and users takes place through [Mostro clients](./clients.md) using [NIP-59](https://github.com/nostr-protocol/nips/blob/master/59.md) events. Within these events, the content and the public key of the sender are encrypted with an ephemeral key, preventing the public revelation of the identity of those interacting with Mostro. To enhance privacy, Mostro clients automatically generate a new private key for users for each order they take or create. This way, when Mostro sends NIP-59 events to users, the generated event will display a public key that is used only for that operation, ensuring a new `"identity"` for each exchange and preventing buy and sell transactions from being linked to a single person.
+Communication between Mostrod and users takes place through [Mostro clients](./clients.md) using [NIP-59](https://github.com/nostr-protocol/nips/blob/master/59.md) events. Within these events, the content and the public key of the sender are encrypted with an ephemeral key, preventing the public revelation of the identity of those interacting with Mostro. To enhance privacy, Mostro clients automatically generate a new private key for users for each order they take or create. This way, when Mostrod sends NIP-59 events to users, the generated event will display a public key that is used only for that operation, ensuring a new `"identity"` for each exchange and preventing buy and sell transactions from being linked to a single person.
 
 Mostro clients will never share users’ private keys with a Mostro instance or its administrator under any circumstances.
 

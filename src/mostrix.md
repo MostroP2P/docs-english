@@ -1,6 +1,6 @@
 # MostriX
 
-MostriX is a Mostro client with a TUI (Terminal User Interface) primarily focused on Mostro instance administrators. Its visual terminal interface allows managing disputes and administering the instance efficiently, without the need to type commands manually.
+MostriX is a Mostro client with a TUI (Terminal User Interface) primarily focused on Mostro node administrators. Its visual terminal interface allows managing disputes and administering the node efficiently, without the need to type commands manually.
 
 ![mostrix](./assets/images/mostrix.png)
 
@@ -43,7 +43,7 @@ MostriX is configured through a `settings.toml` file. On first run, it is automa
 
 Main parameters:
 
-- `mostro_pubkey`: Public key of the Mostro instance
+- `mostro_pubkey`: Public key of the Mostro node
 - `nsec_privkey`: Your Nostr private key
 - `relays`: List of relays to connect to
 - `currencies`: Fiat currencies you're interested in

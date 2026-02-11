@@ -4,11 +4,11 @@ If your counterparty is unresponsive, you suspect a scam attempt, or a misunders
 
 ## How It Works
 
-When you start a dispute, you will be attended to by the administrator of the Mostro instance you are using, or by a person designated by that administrator (solver). Upon opening the dispute, Mostro will provide you with a unique token number, and your counterparty will receive a different one. Both tokens will be revealed to the administrator handling the dispute. When the administrator contacts you and your counterparty, they will tell you your token, allowing you to verify that they are the designated person and ensuring they are not an impostor.
+When you start a dispute, you will be attended to by the administrator of the Mostro node you are using, or by a person designated by that administrator (solver). Upon opening the dispute, Mostro will provide you with a unique token number, and your counterparty will receive a different one. Both tokens will be revealed to the administrator handling the dispute. When the administrator contacts you and your counterparty, they will tell you your token, allowing you to verify that they are the designated person and ensuring they are not an impostor.
 
 ## Resolution
 
-There is no standard method for resolving disputes across all Mostro instances. Each administrator can decide how to manage disputes generated in their instance and what evidence to request from users to make the most appropriate decision.
+There is no standard method for resolving disputes across all Mostro nodes. Each administrator can decide how to manage disputes generated in their node and what evidence to request from users to make the most appropriate decision.
 
 When the administrator decides which user is in the right, they will have Mostro release the sats to the appropriate user. Administrators do not charge any extra fee for resolving disputes.
 

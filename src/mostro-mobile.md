@@ -53,10 +53,10 @@
 
 - Available in Spanish, English, and Italian
 
-### Multiple Instances
+### Multiple Nodes
 
-- Support for connecting to different Mostro instances
-- Switch between instances from settings
+- Support for connecting to different Mostro nodes
+- Switch between nodes from settings
 
 ## Getting Started
 

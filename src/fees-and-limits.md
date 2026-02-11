@@ -1,29 +1,29 @@
 # Exchange Fees and Limits
 
-Each operator of a Mostro instance can set their own fees and limits per transaction, fostering competition among different instances and allowing users to select the one that best suits their needs.
+Each operator of a Mostro node can set their own fees and limits per transaction, fostering competition among different nodes and allowing users to select the one that best suits their needs.
 
 ## Fees
 
-Fees are charged to both the buyer and the seller for each completed transaction. The exact percentage depends on the Mostro instance you use.
+Fees are charged to both the buyer and the seller for each completed transaction. The exact percentage depends on the Mostro node you use.
 
-The Mostro instance currently active on mainnet (`npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr`) charges a 0.3% fee to both the buyer and the seller.
+The Mostro node currently active on mainnet (`npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr`) charges a 0.3% fee to both the buyer and the seller.
 
 ## Limits
 
-Each instance also defines the minimum and maximum amounts allowed per transaction. The main instance on mainnet allows exchanges from 100 sats to 20,000 sats per operation.
+Each node also defines the minimum and maximum amounts allowed per transaction. The main node on mainnet allows exchanges from 100 sats to 20,000 sats per operation.
 
-## Multiple Mostro Instances
+## Multiple Mostro Nodes
 
-Mostro is designed to be a decentralized system where multiple operators can run their own instances. This means that:
+Mostro is designed to be a decentralized system where multiple operators can run their own nodes. This means that:
 
-- There is competition among instances to offer the best service
+- There is competition among nodes to offer the best service
 - Each operator defines their own fees, limits, and accepted currencies
-- Users are free to choose which instance to trade on
-- If one instance goes down, others remain available
+- Users are free to choose which node to trade on
+- If one node goes down, others remain available
 
 ## Development Contribution
 
-Each Mostro instance automatically contributes a percentage of its earnings to the project's development fund. This contribution comes from the operator's earnings and is not charged extra to users.
+Each Mostro node automatically contributes a percentage of its earnings to the project's development fund. This contribution comes from the operator's earnings and is not charged extra to users.
 
 This system ensures the sustainability of Mostro's development in a transparent way: all contributions are published as events on Nostr and can be verified by anyone.
 

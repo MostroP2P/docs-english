@@ -24,3 +24,7 @@ For more details on how this privacy system works, see the [Privacy in Mostro](.
 Disputes are never opened automatically. The users involved must initiate them before the [hold invoice](./hold-invoice.md) paid by the seller expires, so that the administrator has enough time to request evidence from both parties and make an appropriate decision.
 
 Time continues to run from when the order was accepted and does not stop when a dispute is opened. The administrator must resolve it before the time expires, so users should not wait too long to initiate one. You can read more about timeframes [here](./times.md).
+
+## Anti-Abuse Bond in Disputes
+
+If you trade on a node that requires an [anti-abuse bond](./anti-abuse-bond.md), the administrator may claim the bond of whoever acted in bad faith when resolving the dispute. Part of that bond is given to the honest counterparty as compensation. See [Anti-Abuse Bond](./anti-abuse-bond.md) to learn how it works.

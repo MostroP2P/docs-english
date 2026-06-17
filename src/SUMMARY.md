@@ -4,12 +4,6 @@
 
 ---
 
-- [Protocol Specification (Developers)](https://mostro.network/protocol/)
-- [Run Your Own Node](https://mostro.community/guide)
-- [Guía en Español](https://mostro.network/docs-spanish/)
-
----
-
 - [Frequently Asked Questions](./faq.md)
 	- [What is Mostro?](./what-is-mostro.md)
 	- [What do I need to use Mostro?](./need-it.md)
@@ -19,6 +13,7 @@
 	- [Exchange Fees and Limits](./fees-and-limits.md)
 	- [Can I cancel an order?](./cancelling-an-order.md)
 	- [Hold Invoices: Security of Exchanges on Mostro](./hold-invoice.md)
+	- [Anti-Abuse Bond](./anti-abuse-bond.md)
 	- [Exchange Times](./times.md)
 	- [Reputation System](./reputation.md)
 	- [Dispute Management](./disputes.md)

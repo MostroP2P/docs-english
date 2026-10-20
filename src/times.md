@@ -10,7 +10,12 @@ When an offer is posted, it remains in the order book for *23 hours*. If no one 
 
 Once someone takes an offer, they have up to *15 minutes* to either pay the [hold invoice](./hold-invoice.md) if they are the seller or provide an invoice if they are the buyer. If they do not complete their part within that time frame, the order will be automatically reposted. However, if they do, then the counterparty will have up to *15 minutes* to complete their corresponding action (either paying the hold invoice or providing an invoice, depending on their role in the exchange); if they fail to do so, the order will be canceled and not reposted.
 
-After the seller pays the hold invoice and the buyer provides their invoice, they have until the expiration of the [hold invoice](./hold-invoice.md) provided by Mostro to finalize the exchange. For the Mostro node `npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr`, this period is approximately *24 hours*. During this time, the buyer must send the fiat payment, and the seller must release the sats upon confirming receipt of the fiat. If this time frame is exceeded, the order will expire, and the sats will be returned to the original wallet without Mostro being able to intervene. For this reason, it is recommended to only use instant fiat payment methods.
+After the seller pays the hold invoice and the buyer provides their invoice, they have until shortly before the expiration of the [hold invoice](./hold-invoice.md) provided by Mostro to finalize the exchange. For the Mostro node `npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr`, the hold invoice is valid for approximately *2 days*, and Mostro steps in about *4 hours* before it expires, that is, roughly *46 hours* after the seller paid. During this time, the buyer must send the fiat payment, and the seller must release the sats upon confirming receipt of the fiat. For this reason, it is recommended to only use instant fiat payment methods.
+
+If the exchange has not been completed when Mostro steps in:
+
+- If the buyer has not marked the fiat as sent, Mostro cancels the order and the sats are returned to the seller's wallet.
+- If the buyer has marked the fiat as sent, Mostro [opens a dispute automatically](./disputes.md#automatic-dispute), so that an administrator can resolve it in the little time left before the hold invoice expires.
 
 Within this validity period, users can successfully complete the exchange, [cancel it](./cancelling-an-order.md) cooperatively, or open a [dispute](./disputes.md). After the [hold invoice](./hold-invoice.md) expires, Mostro has no ability to intervene in that order.
 

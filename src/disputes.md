@@ -29,13 +29,13 @@ Time continues to run from when the order was accepted and does not stop when a 
 
 Mostro opens a dispute on its own in only one case: the buyer has marked the fiat as sent, the seller has not released the sats, and the [hold invoice](./hold-invoice.md) is about to expire.
 
-Shortly before the hold invoice expires and the sats are returned to the seller (about two hours before, with the default settings), Mostro checks the order. If it is still waiting for the seller to release the sats, Mostro opens a dispute so that an administrator can decide while the sats are still locked. Otherwise the hold invoice would expire and the sats would return to the seller, even if the buyer had already sent the fiat.
+Shortly before the hold invoice expires and the sats are returned to the seller, Mostro checks the order. If it is still waiting for the seller to release the sats, Mostro opens a dispute so that an administrator can decide while the sats are still locked. Without that dispute, the hold invoice would expire and the sats would return to the seller, even if the buyer had already sent the fiat.
 
 What you should know about this automatic dispute:
 
 - It is registered in the buyer's name, because it is the buyer's payment that is at stake. The buyer will see it as their own dispute, and the seller will see it as a dispute opened by their counterparty.
 - It works like any other dispute: an administrator or solver takes it and attends to both parties.
-- The administrator has very little time to resolve it: only the two hours or so left before the hold invoice expires. If that time runs out, the sats return to the seller and Mostro can no longer intervene. Do not wait for the automatic dispute: if your counterparty stops responding, open the dispute yourself as soon as possible.
+- The administrator has very little time to resolve it before the hold invoice expires: 12 blocks with the default settings. In theory that is 120 minutes, since a block is mined every 10 minutes on average, but blocks do not arrive at fixed intervals, so that time can be longer or shorter. If that time runs out, the sats return to the seller and Mostro can no longer intervene. Do not wait for the automatic dispute: if your counterparty stops responding, open the dispute yourself as soon as possible.
 - If the buyer never marked the fiat as sent, Mostro does not open a dispute. It cancels the order before the hold invoice expires, and the sats return to the seller.
 
 ## Anti-Abuse Bond in Disputes

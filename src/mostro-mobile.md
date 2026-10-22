@@ -1,12 +1,14 @@
 # Mostro Mobile
 
-[Mostro Mobile](https://github.com/MostroP2P/mobile) is the official mobile application for using Mostro. It is available for Android and coming soon to iOS.
+[Mostro App](https://github.com/MostroP2P/app) is the official application for using Mostro. It is available for Android, Windows, macOS, Linux and the web, and coming soon to iOS.
 
 ![mostro-mobile](./assets/images/mostro-mobile.gif)
 
 ## Downloads
 
-- Android: [GitHub Releases](https://github.com/MostroP2P/mobile/releases) or [Zapstore](https://zapstore.dev/apps/naddr1qvzqqqr7pvpzpklqkxldpq25w5qa4hlp7sx636su084zqg2p6skc446x7rav5w56qqfxuet5wahhy6ewd4hhxarjduhxzurssulxpx)
+- Android: [GitHub Releases](https://github.com/MostroP2P/app/releases/latest) or [Zapstore](https://zapstore.dev/apps/foundation.mostro.app)
+- Windows, macOS and Linux: [GitHub Releases](https://github.com/MostroP2P/app/releases/latest)
+- Web: [mostro.network/app](https://mostro.network/app/)
 - iOS: Coming soon
 
 ## Key Features
@@ -69,5 +71,5 @@
 
 ## More Information
 
-- Repository: [https://github.com/MostroP2P/mobile](https://github.com/MostroP2P/mobile)
-- Report bugs: [GitHub Issues](https://github.com/MostroP2P/mobile/issues)
+- Repository: [https://github.com/MostroP2P/app](https://github.com/MostroP2P/app)
+- Report bugs: [GitHub Issues](https://github.com/MostroP2P/app/issues)

@@ -2,7 +2,7 @@
 
 [Mostro App](https://github.com/MostroP2P/app) is the official application for using Mostro. It is available for Android, Windows, macOS, Linux and the web, and coming soon to iOS.
 
-![mostro-mobile](./assets/images/mostro-mobile.gif)
+![Mostro App order book](./assets/images/mostro-app.png)
 
 ## Downloads
 
@@ -32,10 +32,12 @@
 - Set up your Lightning Address in the app
 - When buying sats, the app automatically uses your Lightning Address
 - No need to generate invoices manually
+- Nostr Wallet Connect (NWC) support for automated invoicing
 
 ### Communication
 
 - End-to-end encrypted chat with your counterparty
+- Send encrypted images and files in the chat
 - Chat with the solver during disputes
 - Messages cannot be deleted or altered
 
@@ -53,7 +55,7 @@
 
 ### Multi-language
 
-- Available in Spanish, English, and Italian
+- Available in English, Spanish, French, German, Italian, Dutch, and Portuguese
 
 ### Multiple Nodes
 

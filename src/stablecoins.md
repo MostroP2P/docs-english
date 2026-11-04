@@ -20,7 +20,7 @@ Only nodes whose operator enabled them. The [Mostro App](./mostro-mobile.md) (ve
 ## How the price works
 
 - **Stablecoins** are worth one dollar each, so a USDT order is priced exactly like a USD order. The [premium or discount](./fees-and-limits.md) works the same way.
-- **BTC, LBTC and RBTC** are counted 1:1 in sats. An order for 100,000 means 100,000 sats of that asset (0.001 RBTC). At market price, the premium is the price of the swap: selling 100,000 sats of RBTC with a 1% premium means you lock 99,000 Lightning sats and receive 100,000 sats of RBTC. In the app you enter these amounts in sats.
+- **BTC, LBTC and RBTC** are counted 1:1 in sats. An order for 100,000 means 100,000 sats of that asset (0.001 RBTC). At market price, the premium is the price of the swap: if you sell Lightning sats in an order for 100,000 sats of RBTC with a 1% premium, you lock 99,000 Lightning sats and receive 100,000 sats of RBTC. In the app you enter these amounts in sats.
 - If a node accepts a code but does not price it at market, the app tells you *"This node doesn't quote {code} at market price. Set a fixed amount in sats."*
 
 Mostro's usual [fee](./fees-and-limits.md) applies on top, as in any trade.

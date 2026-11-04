@@ -8,7 +8,7 @@ Not all Mostro nodes require an anti-abuse bond. It is a feature that each admin
 
 Each node that enables it sets its own rules: who it asks for the bond (whoever creates the order, whoever takes it, or both) and how much it is. The amount is usually a small percentage of the order value (for example, 1%) with a minimum in sats, but that percentage is decided by each node.
 
-> **Tip:** You can check whether the node you are using requires an anti-abuse bond —and how much it would be— from your own Mostro client. For example, in [Mostro Mobile](./mostro-mobile.md) you can go to the *About* section and review those node details before trading.
+> **Tip:** The [Mostro App](./mostro-mobile.md) calls the bond a **deposit**. You can check whether a node requires one —and how much— before trading: the node list under *Settings → Network → Mostro Node* shows "Deposit X%" or "No deposit", *About → Connected node* shows the *Deposit*, and *About → Node technical data → Anti-abuse Deposit* shows all its rules. The create and take screens also warn you when a deposit applies.
 
 ## How is it different from the escrow?
 
@@ -20,6 +20,7 @@ You get 100% of your bond back as long as you do your part: when you complete th
 
 - You complete the exchange correctly.
 - You cancel the order cooperatively.
+- You created an order and cancel it before paying the bond, or before anyone takes it.
 - A dispute arises and the administrator does not determine that you acted in bad faith.
 
 Under normal conditions the bond is not a cost: it returns to your wallet in full, just like the sats locked in a hold invoice.
@@ -45,4 +46,4 @@ When a bond is claimed, the sats are split between the node —which thereby fun
 
 ## If you are owed your counterparty's bond
 
-If your counterparty loses their bond and you are owed a share, your client will ask you for an invoice to send you those sats. You have a window defined by the node (for example, 15 days) to claim it; if you let it pass, you lose the right to collect that share. That is why it is best to attend to your client's request when it appears.
+If your counterparty loses their bond and you are owed a share, your client will ask you for an invoice to send you those sats. In the Mostro App you get a notification and a **Claim payout** action, which opens *Claim your share* with the deadline; if you connected a wallet through Nostr Wallet Connect, the invoice is filled in for you. You have a window defined by the node (for example, 15 days) to claim it; if you let it pass, you lose the right to collect that share. That is why it is best to attend to your client's request when it appears.

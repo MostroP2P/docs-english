@@ -32,7 +32,7 @@ If you need to switch devices, reinstall the app, or use a different client, you
 When restoring:
 
 - You recover your identity and reputation
-- You can continue trades that were active
+- In the Mostro App, you can continue trades that were active (reputation mode only). mostro-cli cannot resume an in-flight trade from the 12 words alone: for that it needs its `~/.mcli/mcli.db` file
 - You can access from any compatible Mostro client
 
 In the Mostro App, go to *Account → Import Mostro User* and enter your 12 words. The app asks the node you use for your orders and trades and rebuilds them. Restoring works per node: when you switch to another node, the app restores what you have there too. Before importing, if the current user still has trades in progress, the app warns you that *"This user still has sats in play"*.

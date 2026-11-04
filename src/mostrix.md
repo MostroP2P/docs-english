@@ -15,6 +15,7 @@ Pre-built binaries for Linux, macOS, FreeBSD and Windows are available on [GitHu
 
 ```bash
 sed 's#  artifact-[^/]*/#  #' manifest.txt | sha256sum -c --ignore-missing
+# macOS: replace sha256sum -c with shasum -a 256 -c
 ```
 
 Or build it from source (requires Rust 1.97 or newer):
@@ -54,7 +55,7 @@ Main parameters of `settings.toml`:
 - `currencies_filter`: currencies to show; empty shows all
 - `user_mode`: `user` or `admin` (or **Settings → Switch Mode**)
 - `ln_address`: your Lightning address
-- `admin_privkey`: for solvers, the key registered as solver on the node
+- `admin_privkey`: for solvers, the key registered as solver on the node; for the node operator, the Mostro daemon's own private key (the one behind `mostro_pubkey`), which is needed to add solvers
 
 Use the arrow keys to move between tabs, Ctrl+H for context help, and the **Exit** tab to quit.
 

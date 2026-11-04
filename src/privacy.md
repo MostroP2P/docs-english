@@ -2,7 +2,7 @@
 
 ## User Communication Privacy with Mostro
 
-Communication between Mostrod and users takes place through [Mostro clients](./clients.md) using Mostro's protocol v2: each message is a signed Nostr event of kind 14 whose content is encrypted with [NIP-44](https://github.com/nostr-protocol/nips/blob/master/44.md), so only the node can read it. To enhance privacy, Mostro clients automatically generate a new key for each order you take or create, and that key signs your messages. Relays can see that a one-time key talks to a Mostro node, but not what it says, and buy and sell transactions cannot be linked to a single person from the outside.
+Communication between Mostrod and users takes place through [Mostro clients](./clients.md) using Mostro's protocol v2: each message is a signed Nostr event of kind 14 whose content is encrypted with [NIP-44](https://github.com/nostr-protocol/nips/blob/master/44.md), so only your client and the node can read it. To enhance privacy, Mostro clients automatically generate a new key for each order you take or create, and that key signs your messages. Relays can see that a one-time key talks to a Mostro node, but not what it says, and buy and sell transactions cannot be linked to a single person from the outside.
 
 Mostro clients will never share users' private keys with a Mostro node or its administrator under any circumstances.
 

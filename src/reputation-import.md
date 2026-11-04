@@ -12,7 +12,7 @@ Three figures travel with you:
 
 The source signs them in a small Nostr event, called an attestation, addressed to your Mostro identity. It is valid for 7 days. The node you import into adds those figures to the reputation you already have there. Your counterparties see a single rating, a single number of reviews and a single "trading since" date. Nothing marks a figure as imported.
 
-> **Example:** you have 2 ratings averaging 4.5 on a Mostro node, and you import 214 ratings averaging 4.87 from lnp2pBot. Your counterparties on that node now see about 4.87 from 216 ratings, trading for as long as your first lnp2pBot trade.
+> **Example:** you have 2 ratings averaging 4.5 on a Mostro node, and you import 214 ratings averaging 4.87 from lnp2pBot. Your counterparties on that node now see about 4.87 from 216 ratings, trading since the older of your two first trades (here, your first lnp2pBot trade).
 
 ## Before you start
 
@@ -44,7 +44,7 @@ You can also carry the reputation you earned on one Mostro node (A) to another (
 1. Select node A. Go to *Settings → Network → Reputation → Export my reputation* and tap **Export my reputation**. Leave the authorization field empty.
 2. Confirm the identity in *"Export to this identity?"* with **Export**. The app says your reputation is ready and valid for 7 days.
 3. Select node B in *Settings → Network → Mostro Node*.
-4. Open *Reputation → Import reputation*. The attestation is already filled in and checked.
+4. Open *Settings → Network → Reputation → Import reputation*. The attestation is already filled in and checked.
 5. Tap **Import into this Mostro**.
 
 Node A exports only the reputation you earned **on node A**: at least 10 completed trades and 5 ratings received there. Reputation you imported into node A does not travel again.

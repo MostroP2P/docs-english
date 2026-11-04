@@ -26,6 +26,7 @@ Pre-built binaries for Linux, FreeBSD and Windows are also available on [GitHub 
 
 ```bash
 sed 's#  artifact-[^/]*/#  #' manifest.txt | sha256sum -c --ignore-missing
+# Windows (PowerShell): Get-FileHash <file> -Algorithm SHA256, then compare with manifest.txt
 ```
 
 ## Features

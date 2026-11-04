@@ -4,7 +4,7 @@ Before you trade, or when something takes longer than usual, you can check the s
 
 **[status.mostro.network](https://status.mostro.network)**
 
-Every minute, each node publishes a signed health report on Nostr. The page reads those reports straight from the relays, checks them in your browser, and compares each node's Lightning node with public block explorers.
+Every minute, each node publishes a signed health report on Nostr. The page reads those reports straight from the relays, checks them in your browser, and compares the Lightning node of each monitored node with public block explorers.
 
 | Colour | Meaning |
 |---|---|
@@ -21,7 +21,7 @@ A node in maintenance does not accept new orders or takes, but trades that are a
 
 ## If your sats are late
 
-If the node's own Lightning node has a problem, Mostro does not give up on your payment: it waits and pays automatically once the problem is solved, and that delay does not count as a failed payment on your side. If the node stays red for a long time, contact its operator (see [Support and Contact](./support-and-contacts.md)).
+If the node's own Lightning node has a problem, Mostro does not give up on your payment: it waits and pays automatically once the problem is solved, and that delay does not count as a failed payment on your side. If your payment fails for another reason, for example a route problem, Mostro retries a few times and then asks you for a new invoice: keep the app open and send one, or the payment cannot complete. If the node stays red for a long time, contact its operator (see [Support and Contact](./support-and-contacts.md)).
 
 ## Comparing nodes in the app
 

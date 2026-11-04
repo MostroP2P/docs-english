@@ -19,7 +19,7 @@ Only nodes whose operator enabled them. The [Mostro App](./mostro-mobile.md) (ve
 
 ## How the price works
 
-- **Stablecoins** are worth one dollar each, so a USDT order is priced exactly like a USD order. The [premium or discount](./fees-and-limits.md) works the same way.
+- **Stablecoins** are worth one dollar each, so a USDT order at market price is priced exactly like a USD order. The [premium or discount](./fees-and-limits.md) works the same way.
 - **BTC, LBTC and RBTC** are counted 1:1 in sats. An order for 100,000 means 100,000 sats of that asset (0.001 RBTC). At market price, the premium is the price of the swap: if you sell Lightning sats in an order for 100,000 sats of RBTC with a 1% premium, you lock 99,000 Lightning sats and receive 100,000 sats of RBTC. In the app you enter these amounts in sats.
 - If a node accepts a code but does not price it at market, the app tells you *"This node doesn't quote {code} at market price. Set a fixed amount in sats."*
 
@@ -27,7 +27,7 @@ Mostro's usual [fee](./fees-and-limits.md) applies on top, as in any trade.
 
 ## The payment method is the network
 
-The payment method of the order says on which network the asset is paid: for example `USDT (Tron)`, `USDT (Ethereum)`, `USDC (Base)`, `DOC (Rootstock)`, `BTC (On-chain)`, `LBTC (Liquid)` or `RBTC (Rootstock)`. An order can list several networks; agree in the chat on which one you will use. Mostro does not check the network or the address.
+The payment method of the order says on which network the asset is paid: for example `USDT (Tron)`, `USDT (Ethereum)`, `USDC (Base)`, `DOC (Rootstock)`, `BTC (On-chain)`, `LBTC (Liquid)` or `RBTC (Rootstock)`. A stablecoin order can list several networks; agree in the chat on which one you will use. BTC, LBTC and RBTC already name their network in the code: don't use another one. Mostro does not check the network or the address.
 
 ## Step by step
 
@@ -35,7 +35,7 @@ The payment method of the order says on which network the asset is paid: for exa
 
 1. Pay the [hold invoice](./hold-invoice.md) as in any trade.
 2. Share your receiving address in the trade chat. Make sure it is an address for the network you agreed on.
-3. When the buyer marks the payment as sent, check with the transaction ID they pasted in the chat that the full amount arrived **and is confirmed**.
+3. When the buyer marks the payment as sent, check with the transaction ID they pasted in the chat (for Liquid, with the unblinded link) that the full amount arrived **and is confirmed**.
 4. Only then tap **Release sats**.
 
 **If you are buying sats** (you send the asset):
@@ -58,4 +58,4 @@ If something goes wrong, open a [dispute](./disputes.md) as usual. There is no b
 
 ## Other clients
 
-[mostro-cli](./mostro-cli.md) and [MostriX](./mostrix.md) can create these orders only at a fixed price for now, and do not show BTC, LBTC and RBTC amounts in sats. Older versions of the app have the same limitation.
+[mostro-cli](./mostro-cli.md) and [MostriX](./mostrix.md) can create these orders only at a fixed price for now, and do not label BTC, LBTC and RBTC amounts as sats. The number you type and see there is still in sats, even if the client shows it as RBTC: `100000` means 0.001 RBTC. Older versions of the app have the same limitation; if in doubt, use a current Mostro App for these orders.

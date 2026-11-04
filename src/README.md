@@ -9,15 +9,19 @@ On this site, you'll find information on how to use [Mostro](https://mostro.netw
 2. **Open any [Mostro client](./clients.md).** 
 
 3. **Follow the instructions of the [client](./clients.md):**
-   - Log in with a Nostr key; some [Mostro clients](./clients.md) will create one for you!
+   - The [Mostro App](./mostro-mobile.md) creates your identity for you: back up its 12 words before your first trade.
+   - Choose the Mostro node you want to trade on.
    - Find or create bitcoin buy/sell offers.
    - Wait for an interested user.
    - If you're buying sats, provide the invoice where you will receive the sats.
    - If you're selling sats, pay the [hold invoice](./hold-invoice.md) (the sats will remain locked in your wallet until the end of the process).
+   - Some nodes also ask for a small [anti-abuse deposit](./anti-abuse-bond.md), which you get back when you trade in good faith.
    - Talk to your counterparty. Agree on how to exchange the fiat. This is a [private](./privacy.md) process.
    - Complete the exchange.
    - If your counterparty does not respond, start a [dispute](./disputes.md). 
    - [Rate](./reputation.md) your counterparty. You will also be [rated](./reputation.md).
+
+Already have a reputation on @lnp2pBot or another Mostro node? You can [bring it with you](./reputation-import.md).
 
 ## Recommendations
 

@@ -2,6 +2,8 @@
 
 Mostro is not a company but an Open Source project maintained by its community, so it does not have a technical support department. However, there is a community you can reach out to if needed.
 
+If a trade is slow or a node does not answer, first check the node's state on [status.mostro.network](https://status.mostro.network) (see [Is a Mostro Node Working?](./node-status.md)). Questions about a specific trade or dispute go to the operator of the node you used.
+
 If you have any questions, you can ask in the Telegram groups:
 
 - Mostro community: [https://t.me/MostroP2P](https://t.me/MostroP2P)

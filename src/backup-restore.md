@@ -12,7 +12,11 @@ Without a backup of your 12-word phrase, you could lose:
 
 ## How to Back Up
 
-Each [Mostro client](./clients.md) has its own way of displaying and backing up your 12-word phrase. Check the documentation of the client you use to learn how.
+In the [Mostro App](./mostro-mobile.md), go to *Account → Secret Words* and tap **Show words**. The app guides you in three steps: write the 12 words on paper, tap three of them to check you wrote them right, done. Until you do it, the app reminds you with a *Secure your reputation* banner.
+
+The app does not include your keys in your phone's cloud backup or device transfer, so the 12 words are the only way to get your account back on a new device.
+
+Other [Mostro clients](./clients.md) have their own way of displaying your 12-word phrase. Check their documentation.
 
 The important things are:
 
@@ -28,10 +32,12 @@ If you need to switch devices, reinstall the app, or use a different client, you
 When restoring:
 
 - You recover your identity and reputation
-- You can continue trades that were active
+- In the Mostro App, you can continue trades that were active (reputation mode only). mostro-cli cannot resume an in-flight trade from the 12 words alone: for that it needs its `~/.mcli/mcli.db` file
 - You can access from any compatible Mostro client
 
-The exact restoration process depends on the client you use. Check the specific client documentation for detailed steps.
+In the Mostro App, go to *Account → Import Mostro User* and enter your 12 words. The app asks the node you use for your orders and trades and rebuilds them. Restoring works per node: when you switch to another node, the app restores what you have there too. Before importing, if the current user still has trades in progress, the app warns you that *"This user still has sats in play"*.
+
+If you used the old Mostro Mobile app, you can import the same 12 words into the new Mostro App: both use the same keys. Finish any open trade in the old app first.
 
 ## Important: Full Privacy Mode
 

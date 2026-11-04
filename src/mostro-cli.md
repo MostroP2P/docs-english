@@ -20,7 +20,13 @@ cd mostro-cli
 cargo build --release
 ```
 
-Requirements: Rust 1.64 or higher.
+Requirements: Rust 1.97 or newer. On Debian/Ubuntu you also need `sudo apt install -y cmake build-essential pkg-config libssl-dev`.
+
+Pre-built binaries for Linux, FreeBSD and Windows are also available on [GitHub Releases](https://github.com/MostroP2P/mostro-cli/releases) (there is no macOS binary; use `cargo install`). Check the download against the release's `manifest.txt`:
+
+```bash
+sed 's#  artifact-[^/]*/#  #' manifest.txt | sha256sum -c --ignore-missing
+```
 
 ## Features
 
@@ -28,18 +34,21 @@ Requirements: Rust 1.64 or higher.
 - Take orders from the order book
 - Support for range orders (min-max)
 - Create buy orders with Lightning Address
-- Direct chat with counterparties (NIP-17)
-- Identity management (NIP-06 support)
-- Full dispute flow
-- Restore session to recover pending orders
-- Administration commands for Mostro operators
+- Chat with your counterparty (Mostro protocol v2, NIP-44 encrypted)
+- Identity management from a 12-word phrase (NIP-06), stored in `~/.mcli/mcli.db`: back it up
+- Full dispute flow, including the chat with the solver (`disputechat`)
+- Claim your share of a forfeited [anti-abuse bond](./anti-abuse-bond.md) (`addbondinvoice`)
+- Restore your identity and list the orders and disputes Mostro holds for you (`restore`)
+- Administration commands for Mostro operators and solvers
+
+Mostro CLI speaks only protocol v2 (since version 0.16.2), like current Mostro nodes. It does not yet support [importing your reputation](./reputation-import.md), and it can only create [stablecoin and other-network bitcoin](./stablecoins.md) orders at a fixed price.
 
 ## Basic Usage
 
 ```bash
 # Set environment variables (replace the variables as needed)
-export MOSTRO_PUBKEY=npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr
-export RELAYS='wss://relay.mostro.network,wss://nos.lol'
+export MOSTRO_PUBKEY=<the npub of the Mostro node you want to use>
+export RELAYS='wss://relay.mostro.network,wss://mostro-p2p.tech'
 
 # List available orders
 mostro-cli listorders
@@ -56,6 +65,8 @@ mostro-cli cancel -o <order-id>
 # Restore session
 mostro-cli restore
 ```
+
+Mostro CLI reads no configuration file: set the node and relays in the environment, and put global flags (`-m`, `-r`, `-p`, `-t`, `-v`) before the command. It does not stay connected, so run `mostro-cli getdm` after each step to see Mostro's answers.
 
 To see all available commands:
 
